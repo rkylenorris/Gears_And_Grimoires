@@ -1,1 +1,1 @@
-# Gears and Grimires: An RPG
+# Gears and Grimoires: An RPG
