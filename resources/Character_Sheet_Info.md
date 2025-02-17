@@ -1,0 +1,74 @@
+RPG Character Sheet Info
+
+- Character Name
+- Class
+- Level
+- Race
+- Background
+- Stats:
+	- Strength
+	- Dexterity
+	- Constitution
+	- Intelligence
+	- Wisdom
+	- Charisma
+- Inspiration
+- Proficiency Bonus
+- Saving throws \(same as stats\)
+- Skills:
+	- Acrobatics \(Dex\)
+	- Animal Handling \(Wis\)
+	- Arcana \(Int\)
+	- Athletics \(Str\)
+	- Deception \(Cha\)
+	- History \(Int\)
+	- Insight \(Wis\)
+	- Intimidation \(Cha\)
+	- Investigation \(Int\)
+	- Medicine \(Wis\)
+	- Nature \(Int\)
+	- Perception \(Wis\)
+	- Performance \(Cha\)
+	- Persuasion \(Cha\)
+	- Religion \(Int\)
+	- Sleight of Hand \(Dex\)
+	- Stealth \(Dex\)
+	- Survival \(Wis\)
+- Passive Wisdom \(perception\)
+- Armor Class
+- Initiative
+- Speed
+- Hit Points:
+	- Max
+	- Current
+	- Temp
+- Hit dice:
+	- Number of dice
+	- Type of dice
+- Death saves:
+	- Successes
+	- Failures
+- Attacks & Spellcasting:
+	- Name, ATK, Damage/Type
+- Equipment
+	- Equipment and Currency totals
+- Personality Traits
+- Ideals
+- Bonds
+- Flaws
+- Features & Traits
+	- Come from race, class, and background
+- Age
+- Height
+- Weight
+- Eye color
+- Skin
+- Hair
+- Appearance
+- Back story
+- Spellcasting ability
+- Spell save dc
+- Spell attack bonus
+- Cantrips
+- Spells by level
+

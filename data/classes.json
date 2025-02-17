@@ -1,0 +1,713 @@
+[
+    {
+        "name": "Barbarian",
+        "hitDie": "d12",
+        "primaryAbilities": [
+            "Strength",
+            "Constitution"
+        ],
+        "savingThrows": [
+            "Strength",
+            "Constitution"
+        ],
+        "classFeatures": [
+            {
+                "name": "Rage",
+                "desc": [
+                    "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:",
+                    "- You have advantage on Strength checks and Strength saving throws.",
+                    "- When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.",
+                    "- You have Resistance to bludgeoning, piercing, and slashing damage.",
+                    "If you are able to cast Spells, you can't cast them or concentrate on them while raging.",
+                    "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.",
+                    "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
+                ]
+            },
+            {
+                "name": "Unarmored Defense",
+                "desc": [
+                    "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+                ]
+            }
+        ],
+        "startingEquipment": "Explorer's Pack, 4 Javelins",
+        "startingEquipmentOptions": [
+            "Option: Greataxe OR any martial melee weapon",
+            "Option: Two handaxes OR any simple weapon"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor",
+                "Medium armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Martial weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, Survival"
+        },
+        "flavor": "Fierce warriors with primal instincts and raw physical power, barbarians tap into ancient rage."
+    },
+    {
+        "name": "Bard",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Charisma"
+        ],
+        "savingThrows": [
+            "Dexterity",
+            "Charisma"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations."
+                ]
+            },
+            {
+                "name": "Bardic Inspiration",
+                "desc": [
+                    "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
+                    "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
+                    "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+                ]
+            },
+            {
+                "name": "Jack of All Trades",
+                "desc": [
+                    "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
+                ]
+            }
+        ],
+        "startingEquipment": "Rapier, Lute",
+        "startingEquipmentOptions": [
+            "Option: Diplomat's Pack OR Entertainer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Hand crossbows",
+                "Longswords",
+                "Rapiers",
+                "Shortswords"
+            ],
+            "tools": [
+                "Three musical instruments of your choice"
+            ]
+        },
+        "proficiencyOptions": {
+            "skills": "Choose any three skills"
+        },
+        "flavor": "Charismatic performers and versatile spellcasters who weave magic with music and words."
+    },
+    {
+        "name": "Cleric",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Wisdom"
+        ],
+        "savingThrows": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "As a conduit for divine power, you can cast cleric spells."
+                ]
+            },
+            {
+                "name": "Divine Domain",
+                "desc": [
+                    "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
+                    "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
+                ]
+            },
+            {
+                "name": "Channel Divinity",
+                "desc": [
+                    "Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
+                    "When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
+                    "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+                ]
+            },
+            {
+                "name": "Turn Undead",
+                "desc": [
+                    "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+                    "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+                ]
+            }
+        ],
+        "startingEquipment": "Mace, Scale Mail, Light Crossbow with 20 bolts, Holy Symbol",
+        "startingEquipmentOptions": [
+            "Option: Priest's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor",
+                "Medium armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Simple weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from History, Insight, Medicine, Persuasion, Religion"
+        },
+        "flavor": "Devotees of deities who wield divine magic to heal, protect, and smite foes."
+    },
+    {
+        "name": "Druid",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Wisdom"
+        ],
+        "savingThrows": [
+            "Intelligence",
+            "Wisdom"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
+                ]
+            },
+            {
+                "name": "Wild Shape",
+                "desc": [
+                    "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
+                    "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.",
+                    "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.",
+                    "While you are transformed, the following rules apply:",
+                    "- Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
+                    "- When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.",
+                    "- You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you've already cast.",
+                    "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
+                    "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+                ]
+            },
+            {
+                "name": "Druid Circle",
+                "desc": [
+                    "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+                ]
+            }
+        ],
+        "startingEquipment": "Leather Armor, Wooden Shield, Scimitar, Druidic Focus",
+        "startingEquipmentOptions": [
+            "Option: Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor",
+                "Medium armor",
+                "Shields (druids will not wear metal armor)"
+            ],
+            "weapons": [
+                "Clubs",
+                "Daggers",
+                "Darts",
+                "Javelins",
+                "Maces",
+                "Quarterstaffs",
+                "Scimitars",
+                "Sickles",
+                "Slings",
+                "Spears"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Animal Handling, Arcana, Insight, Medicine, Nature, Perception, Religion, Survival"
+        },
+        "flavor": "Guardians of nature who command the elements and can shapeshift into animals."
+    },
+    {
+        "name": "Fighter",
+        "hitDie": "d10",
+        "primaryAbilities": [
+            "Strength",
+            "Dexterity"
+        ],
+        "savingThrows": [
+            "Strength",
+            "Constitution"
+        ],
+        "classFeatures": [
+            {
+                "name": "Fighting Style",
+                "desc": [
+                    "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
+                ]
+            },
+            {
+                "name": "Second Wind",
+                "desc": [
+                    "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
+                ]
+            },
+            {
+                "name": "Action Surge",
+                "desc": [
+                    "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.",
+                    "Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+                ]
+            },
+            {
+                "name": "Extra Attack",
+                "desc": [
+                    "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+                ]
+            }
+        ],
+        "startingEquipment": "Chain Mail, Light Crossbow with 20 bolts",
+        "startingEquipmentOptions": [
+            "Option: (a) Martial weapon and shield OR (b) two martial weapons",
+            "Option: (a) Dungeoneer's Pack OR (b) Explorer's Pack",
+            "Option: (a) Chain Mail OR (b) Leather Armor with Longbow and 20 arrows"
+        ],
+        "proficiencies": {
+            "armor": [
+                "All armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Martial weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Survival"
+        },
+        "flavor": "Masters of martial combat, fighters are versatile warriors skilled with various weapons and tactics."
+    },
+    {
+        "name": "Monk",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Dexterity",
+            "Wisdom"
+        ],
+        "savingThrows": [
+            "Strength",
+            "Dexterity"
+        ],
+        "classFeatures": [
+            {
+                "name": "Martial Arts",
+                "desc": [
+                    "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two- handed or heavy property.",
+                    "You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:",
+                    "- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.",
+                    "- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.",
+                    "- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.",
+                    "Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon."
+                ]
+            },
+            {
+                "name": "Ki",
+                "desc": [
+                    "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of Table: The Monk.",
+                    "You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.",
+                    "When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.",
+                    "Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                    "Ki save DC = 8 + your proficiency bonus + your Wisdom modifier"
+                ]
+            },
+            {
+                "name": "Unarmored Movement",
+                "desc": [
+                    "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.",
+                    "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
+                ]
+            }
+        ],
+        "startingEquipment": "10 Darts",
+        "startingEquipmentOptions": [
+            "Option: Shortsword OR any simple melee weapon",
+            "Option: Dungeoneer's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [],
+            "weapons": [
+                "Simple weapons",
+                "Shortswords"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Acrobatics, Athletics, History, Insight, Religion, Stealth"
+        },
+        "flavor": "Ascetic martial artists who harness inner energy to enhance their physical and mental capabilities."
+    },
+    {
+        "name": "Paladin",
+        "hitDie": "d10",
+        "primaryAbilities": [
+            "Strength",
+            "Charisma"
+        ],
+        "savingThrows": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "classFeatures": [
+            {
+                "name": "Divine Smite",
+                "desc": [
+                    "Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+                ]
+            },
+            {
+                "name": "Lay on Hands",
+                "desc": [
+                    "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.",
+                    "As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+                    "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
+                    "This feature has no effect on undead and constructs."
+                ]
+            },
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does."
+                ]
+            },
+            {
+                "name": "Aura of Protection",
+                "desc": [
+                    "Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
+                    "At 18th level, the range of this aura increases to 30 feet."
+                ]
+            }
+        ],
+        "startingEquipment": "Chain Mail, Holy Symbol",
+        "startingEquipmentOptions": [
+            "Option: (a) Martial weapon and shield OR (b) two martial weapons",
+            "Option: (a) 5 Javelins OR (b) any simple melee weapon",
+            "Option: Priest's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "All armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Martial weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, Religion"
+        },
+        "flavor": "Holy knights bound by oath to uphold justice and righteousness, paladins blend martial prowess with divine magic."
+    },
+    {
+        "name": "Ranger",
+        "hitDie": "d10",
+        "primaryAbilities": [
+            "Dexterity",
+            "Wisdom"
+        ],
+        "savingThrows": [
+            "Strength",
+            "Dexterity"
+        ],
+        "classFeatures": [
+            {
+                "name": "Favored Enemy",
+                "desc": [
+                    "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+                    "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.",
+                    "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
+                    "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+                    "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+                ]
+            },
+            {
+                "name": "Natural Explorer",
+                "desc": [
+                    "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
+                    "While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+                    "- Difficult terrain doesn't slow your group's travel.",
+                    "- Your group can't become lost except by magical means.",
+                    "- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+                    "- If you are traveling alone, you can move stealthily at a normal pace.",
+                    "- When you forage, you find twice as much food as you normally would.",
+                    "- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.",
+                    "You choose additional favored terrain types at 6th and 10th level."
+                ]
+            },
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does."
+                ]
+            }
+        ],
+        "startingEquipment": "Longbow with 20 arrows",
+        "startingEquipmentOptions": [
+            "Option: (a) Scale Mail OR (b) Leather Armor",
+            "Option: (a) Two Shortswords OR (b) two simple melee weapons",
+            "Option: Dungeoneer's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor",
+                "Medium armor",
+                "Shields"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Martial weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival"
+        },
+        "flavor": "Skilled hunters and trackers who thrive in the wilderness, rangers blend combat skill with nature-based magic."
+    },
+    {
+        "name": "Rogue",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Dexterity"
+        ],
+        "savingThrows": [
+            "Dexterity",
+            "Intelligence"
+        ],
+        "classFeatures": [
+            {
+                "name": "Sneak Attack",
+                "desc": [
+                    "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
+                    "You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.",
+                    "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+                ]
+            },
+            {
+                "name": "Thieves' Cant",
+                "desc": [
+                    "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.",
+                    "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+                ]
+            },
+            {
+                "name": "Cunning Action",
+                "desc": [
+                    "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+                ]
+            }
+        ],
+        "startingEquipment": "Rapier, Shortbow with 20 arrows, Leather Armor, Two Daggers, Thieves' Tools",
+        "startingEquipmentOptions": [
+            "Option: Burglar's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor"
+            ],
+            "weapons": [
+                "Simple weapons",
+                "Hand crossbows",
+                "Longswords",
+                "Rapiers",
+                "Shortswords"
+            ],
+            "tools": [
+                "Thieves' tools"
+            ]
+        },
+        "proficiencyOptions": {
+            "skills": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, Stealth"
+        },
+        "flavor": "Masters of stealth and subterfuge, rogues excel at striking from the shadows and outwitting foes."
+    },
+    {
+        "name": "Sorcerer",
+        "hitDie": "d6",
+        "primaryAbilities": [
+            "Charisma"
+        ],
+        "savingThrows": [
+            "Constitution",
+            "Charisma"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
+                ]
+            },
+            {
+                "name": "Sorcery Points",
+                "desc": [
+                    "Description not found"
+                ]
+            },
+            {
+                "name": "Metamagic",
+                "desc": [
+                    "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.",
+                    "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
+                ]
+            }
+        ],
+        "startingEquipment": "Two Daggers",
+        "startingEquipmentOptions": [
+            "Option: (a) Light Crossbow with 20 bolts OR (b) any simple weapon",
+            "Option: (a) Component Pouch OR (b) Arcane Focus",
+            "Option: Dungeoneer's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [],
+            "weapons": [
+                "Daggers",
+                "Darts",
+                "Slings",
+                "Quarterstaffs",
+                "Light crossbows"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, Religion"
+        },
+        "flavor": "Innately magical beings whose power flows from within, sorcerers shape spells with raw, untamed energy."
+    },
+    {
+        "name": "Warlock",
+        "hitDie": "d8",
+        "primaryAbilities": [
+            "Charisma"
+        ],
+        "savingThrows": [
+            "Wisdom",
+            "Charisma"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "Description not found"
+                ]
+            },
+            {
+                "name": "Eldritch Invocations",
+                "desc": [
+                    "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.",
+                    "At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.",
+                    "Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
+                ]
+            },
+            {
+                "name": "Pact Magic",
+                "desc": [
+                    "Your arcane research and the magic bestowed on you by your patron have given you facility with spells."
+                ]
+            },
+            {
+                "name": "Otherworldly Patron",
+                "desc": [
+                    "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+                ]
+            }
+        ],
+        "startingEquipment": "Leather Armor, Two Daggers",
+        "startingEquipmentOptions": [
+            "Option: (a) Light Crossbow with 20 bolts OR (b) any simple weapon",
+            "Option: (a) Component Pouch OR (b) Arcane Focus",
+            "Option: Scholar's Pack OR Dungeoneer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [
+                "Light armor"
+            ],
+            "weapons": [
+                "Simple weapons"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, Religion"
+        },
+        "flavor": "Bound by a pact with otherworldly entities, warlocks wield eldritch powers and forge dark bargains."
+    },
+    {
+        "name": "Wizard",
+        "hitDie": "d6",
+        "primaryAbilities": [
+            "Intelligence"
+        ],
+        "savingThrows": [
+            "Intelligence",
+            "Wisdom"
+        ],
+        "classFeatures": [
+            {
+                "name": "Spellcasting",
+                "desc": [
+                    "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power."
+                ]
+            },
+            {
+                "name": "Arcane Recovery",
+                "desc": [
+                    "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.",
+                    "For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots."
+                ]
+            },
+            {
+                "name": "Spellbook",
+                "desc": [
+                    "Description not found"
+                ]
+            },
+            {
+                "name": "Arcane Tradition",
+                "desc": [
+                    "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.",
+                    "Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
+                ]
+            }
+        ],
+        "startingEquipment": "Spellbook, Component Pouch",
+        "startingEquipmentOptions": [
+            "Option: (a) Quarterstaff OR (b) Dagger",
+            "Option: Scholar's Pack OR Explorer's Pack"
+        ],
+        "proficiencies": {
+            "armor": [],
+            "weapons": [
+                "Daggers",
+                "Darts",
+                "Slings",
+                "Quarterstaffs",
+                "Light crossbows"
+            ],
+            "tools": []
+        },
+        "proficiencyOptions": {
+            "skills": "Choose two from Arcana, History, Insight, Investigation, Medicine, Religion"
+        },
+        "flavor": "Scholars of the arcane who study ancient tomes and unlock the secrets of magic, wizards manipulate reality with a deep understanding of spellcraft."
+    }
+]

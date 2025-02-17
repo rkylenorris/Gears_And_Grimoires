@@ -1,0 +1,63 @@
+Reduced RPG Character Sheet
+
+Attributes:
+
+- Name
+- Class
+	- Name
+	- Hit die
+	- Primary abilities
+	- Saving throws
+	- Features
+	- Proficiencies
+	- Flavor
+- Race
+	- Name
+	- Ability scores increase\(s\)
+	- Speed
+	- Traits
+	- Proficiencies
+	- flavor
+- Background
+	- Name
+	- Description
+	- Features
+- Stats
+	- Strength
+	- Dexterity
+	- Constitution
+	- Intelligence
+	- Wisdom
+	- Charisma
+- Proficiency Bonus
+- Skills
+	- Acrobatics \(Dex\)
+	- Animal Handling \(Wis\)
+	- Arcana \(Int\)
+	- Athletics \(Str\)
+	- Deception \(Cha\)
+	- History \(Int\)
+	- Insight \(Wis\)
+	- Intimidation \(Cha\)
+	- Investigation \(Int\)
+	- Medicine \(Wis\)
+	- Nature \(Int\)
+	- Perception \(Wis\)
+	- Performance \(Cha\)
+	- Persuasion \(Cha\)
+	- Religion \(Int\)
+	- Sleight of Hand \(Dex\)
+	- Stealth \(Dex\)
+	- Survival \(Wis\)
+- Perception
+- Armor Class
+- Initiative
+- Hit points
+	- Max
+	- Current
+	- Temp
+- Death Saves
+- Attacks/Spells
+- Equipment
+- Appearance
+

@@ -1,0 +1,289 @@
+[
+    {
+        "name": "Dragonborn",
+        "abilityScoreIncrease": {
+            "Strength": "+2",
+            "Charisma": "+1"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [
+            "Draconic Ancestry",
+            "Breath Weapon",
+            "Damage Resistance"
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Draconic"
+        ],
+        "subraces": [],
+        "flavor": "Proud and imposing, dragonborn carry the blood of dragons in their veins and strive to honor their draconic heritage."
+    },
+    {
+        "name": "Dwarf",
+        "abilityScoreIncrease": {
+            "Constitution": "+2"
+        },
+        "sze": "Medium",
+        "speed": 25,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Dwarven Resilience",
+                "desc": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+            },
+            {
+                "name": "Dwarven Combat Training",
+                "desc": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
+            },
+            {
+                "name": "Tool Proficiency",
+                "desc": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
+            },
+            {
+                "name": "Stonecunning",
+                "desc": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+            }
+        ],
+        "starting_proficiencies": [
+            "Battleaxe",
+            "Handaxe",
+            "Light Hammer",
+            "Warhammer"
+        ],
+        "starting_proficiencies_options": [
+            "Choose one of: Smith's tools, Brewer's supplies, or Mason's tools"
+        ],
+        "languages": [
+            "Common",
+            "Dwarvish"
+        ],
+        "subraces": [
+            "Hill Dwarf",
+            "Mountain Dwarf"
+        ],
+        "flavor": "Stout and steadfast, dwarves are renowned for their craftsmanship, resilience, and deep ties to tradition and the earth."
+    },
+    {
+        "name": "Elf",
+        "abilityScoreIncrease": {
+            "Dexterity": "+2"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Keen Senses",
+                "desc": "You have proficiency in the Perception skill."
+            },
+            {
+                "name": "Fey Ancestry",
+                "desc": "You have advantage on saving throws against being charmed, and magic cannot put you to sleep."
+            },
+            {
+                "name": "Trance",
+                "desc": "Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep."
+            }
+        ],
+        "starting_proficiencies": [
+            "Perception"
+        ],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Elvish"
+        ],
+        "subraces": [
+            "High Elf",
+            "Wood Elf",
+            "Drow"
+        ],
+        "flavor": "Graceful and perceptive, elves are long-lived beings with a deep connection to nature and magic."
+    },
+    {
+        "name": "Gnome",
+        "abilityScoreIncrease": {
+            "Intelligence": "+2"
+        },
+        "sze": "Small",
+        "speed": 25,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Gnome Cunning",
+                "desc": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+            }
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Gnomish"
+        ],
+        "subraces": [
+            "Forest Gnome",
+            "Rock Gnome"
+        ],
+        "flavor": "Inventive and curious, gnomes are quick-witted and excel in magic and trickery, always ready for a new adventure."
+    },
+    {
+        "name": "Half-Elf",
+        "abilityScoreIncrease": {
+            "Charisma": "+2",
+            "Other": "+1 to two other ability scores"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Fey Ancestry",
+                "desc": "You have advantage on saving throws against being charmed, and magic cannot put you to sleep."
+            },
+            {
+                "name": "Skill Versatility",
+                "desc": "You gain proficiency in two skills of your choice."
+            }
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [
+            "Choose two skills of your choice"
+        ],
+        "languages": [
+            "Common",
+            "Elvish",
+            "One extra language of your choice"
+        ],
+        "subraces": [],
+        "flavor": "Combining the best traits of both worlds, half-elves are adaptable, charismatic, and skilled in a variety of endeavors."
+    },
+    {
+        "name": "Half-Orc",
+        "abilityScoreIncrease": {
+            "Strength": "+2",
+            "Constitution": "+1"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Relentless Endurance",
+                "desc": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest."
+            },
+            {
+                "name": "Savage Attacks",
+                "desc": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+            }
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Orcish"
+        ],
+        "subraces": [],
+        "flavor": "Powerful and resilient, half-orcs command respect on the battlefield, though they often wrestle with their dual heritage."
+    },
+    {
+        "name": "Halfling",
+        "abilityScoreIncrease": {
+            "Dexterity": "+2"
+        },
+        "sze": "Small",
+        "speed": 25,
+        "traits": [
+            {
+                "name": "Brave",
+                "desc": "You have advantage on saving throw against being frightened."
+            },
+            {
+                "name": "Halfling Nimbleness",
+                "desc": "You can move through the space of any creature that is of a size larger than yours."
+            },
+            {
+                "name": "Lucky",
+                "desc": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+            }
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Halfling"
+        ],
+        "subraces": [
+            "Lightfoot Halfling",
+            "Stout Halfling"
+        ],
+        "flavor": "Small in stature but big in spirit, halflings are known for their optimism, resourcefulness, and knack for getting out of tight spots."
+    },
+    {
+        "name": "Human",
+        "abilityScoreIncrease": {
+            "All": "+1"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [
+            "Variant: Choose one feat if using the Variant Human traits"
+        ],
+        "languages": [
+            "Common",
+            "One extra language of your choice"
+        ],
+        "subraces": [],
+        "flavor": "Versatile and ambitious, humans are adaptable and driven to excel in a wide array of fields and endeavors."
+    },
+    {
+        "name": "Tiefling",
+        "abilityScoreIncrease": {
+            "Charisma": "+2",
+            "Intelligence": "+1"
+        },
+        "sze": "Medium",
+        "speed": 30,
+        "traits": [
+            {
+                "name": "Darkvision",
+                "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+            },
+            {
+                "name": "Hellish Resistance",
+                "desc": "You have resistance to fire damage."
+            },
+            {
+                "name": "Infernal Legacy",
+                "desc": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+            }
+        ],
+        "starting_proficiencies": [],
+        "starting_proficiencies_options": [],
+        "languages": [
+            "Common",
+            "Infernal"
+        ],
+        "subraces": [],
+        "flavor": "Born of infernal lineage, tieflings grapple with prejudice while harnessing their unique, otherworldly powers."
+    }
+]

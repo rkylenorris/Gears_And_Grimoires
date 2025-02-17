@@ -1,0 +1,4 @@
+flask website
+players have a login
+player text chat incase they can't voice chat on another service
+character sheet pop up
