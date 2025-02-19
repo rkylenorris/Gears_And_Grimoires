@@ -1,108 +1,90 @@
-{
-  "backgrounds": [
+[
     {
-      "name": "Acolyte",
-      "description": "Raised within a temple or religious community, you’re devoted to your faith and ready to offer counsel or healing.",
-      "feature": {
-        "name": "Shelter of the Faithful",
-        "description": "You can find safe haven and support among other believers, often in temples or religious communities."
-      }
+        "name": "Clockwork Orphan",
+        "description": "Raised in the industrial underbelly, you learned to survive among discarded machines and forgotten technology.",
+        "feature": {
+            "name": "Urban Scavenger",
+            "description": "You can easily find useful scraps and tools in industrial ruins."
+        },
+        "skill_proficiencies": ["Tinkering & Traps", "Aether Reflexes"],
+        "tool_proficiencies": ["Lockpicking Set"],
+        "starting_equipment": ["Grappling Hook", "Small Toolset", "Scrap Metal Collection"]
     },
     {
-      "name": "Charlatan",
-      "description": "A cunning con artist who uses charm and trickery to manipulate others and pull off scams.",
-      "feature": {
-        "name": "False Identity",
-        "description": "You’ve crafted a second identity complete with supporting documentation and acquaintances, which can help you blend into different circles."
-      }
+        "name": "Steamwright's Apprentice",
+        "description": "You trained under a master inventor, learning the delicate balance of magic and mechanics.",
+        "feature": {
+            "name": "Workshop Access",
+            "description": "You can request blueprints and materials from your former mentor's workshop."
+        },
+        "skill_proficiencies": ["Precision Engineering", "Schematic Analysis"],
+        "tool_proficiencies": ["Tinkering Kit"],
+        "starting_equipment": ["Blueprint Scrolls", "Clockwork Wrench", "Prototype Gear"]
     },
     {
-      "name": "Criminal",
-      "description": "With a shady past, you’re comfortable in the underbelly of society and know how to navigate its hidden networks.",
-      "feature": {
-        "name": "Criminal Contact",
-        "description": "You have a reliable contact in the criminal underworld who can provide information or assistance when needed."
-      }
+        "name": "Arcane Archivist",
+        "description": "You spent years studying magical texts and technological blueprints, unlocking hidden knowledge.",
+        "feature": {
+            "name": "Lore Recall",
+            "description": "You have an uncanny ability to recall arcane and engineering knowledge."
+        },
+        "skill_proficiencies": ["Runic Studies", "Aether Mechanics"],
+        "tool_proficiencies": ["Bookbinding Tools"],
+        "starting_equipment": ["Enchanted Quill", "Old Spellbook", "Librarian’s Goggles"]
     },
     {
-      "name": "Entertainer",
-      "description": "Born to perform, you live for the applause and thrive on being the center of attention.",
-      "feature": {
-        "name": "By Popular Demand",
-        "description": "You can always find a place to perform, earn a little coin, and get food and lodging wherever you go."
-      }
+        "name": "Guild Operative",
+        "description": "You worked for a powerful guild controlling access to rare magical technology.",
+        "feature": {
+            "name": "Guild Connections",
+            "description": "You have access to underground markets and restricted blueprints."
+        },
+        "skill_proficiencies": ["Influence Protocols", "Tinkering & Traps"],
+        "tool_proficiencies": ["Forgery Kit"],
+        "starting_equipment": ["False Identity Papers", "Encrypted Notes", "Guild Badge"]
     },
     {
-      "name": "Folk Hero",
-      "description": "A champion of the people, you’ve earned the admiration of your community by standing up against injustice or oppression.",
-      "feature": {
-        "name": "Rustic Hospitality",
-        "description": "Common folk will often rally to your aid and offer shelter or assistance, recognizing you as one of their own."
-      }
+        "name": "Urban Innovator",
+        "description": "A self-made inventor, you've turned discarded junk into groundbreaking gadgets.",
+        "feature": {
+            "name": "Scrapyard Genius",
+            "description": "You can create makeshift tools and minor gadgets on the fly."
+        },
+        "skill_proficiencies": ["Precision Engineering", "Gunplay & Ranged Combat"],
+        "tool_proficiencies": ["Tinkering Kit"],
+        "starting_equipment": ["Handmade Pistol", "Gadget Satchel", "Experimental Battery"]
     },
     {
-      "name": "Guild Artisan",
-      "description": "As a skilled craftsman or merchant, you’re part of a larger network of professionals and share in both its prestige and responsibilities.",
-      "feature": {
-        "name": "Guild Membership",
-        "description": "Your membership in a respected guild means you can call on fellow members for help or information."
-      }
+        "name": "Ethereal Envoy",
+        "description": "You mediate between the mechanical world and the arcane realm, balancing both energies.",
+        "feature": {
+            "name": "Mystic Negotiator",
+            "description": "You have an innate ability to communicate with both spirits and constructs."
+        },
+        "skill_proficiencies": ["Arcane Diplomacy", "Magical Tuning"],
+        "tool_proficiencies": ["Aether Compass"],
+        "starting_equipment": ["Silver Insignia", "Translated Runes", "Pocket Dimensional Key"]
     },
     {
-      "name": "Hermit",
-      "description": "A life of solitude has led you to profound insights—whether spiritual, natural, or arcane—that set you apart from society.",
-      "feature": {
-        "name": "Discovery",
-        "description": "During your time in seclusion, you uncovered a secret or made an unexpected discovery that could have major implications."
-      }
+        "name": "Steamborne Nomad",
+        "description": "A wanderer exploring industrial ruins, you have an eye for lost relics and forgotten magic.",
+        "feature": {
+            "name": "Wasteland Survival",
+            "description": "You can identify valuable artifacts and detect hidden machinery."
+        },
+        "skill_proficiencies": ["Foresight & Instincts", "Schematic Analysis"],
+        "tool_proficiencies": ["Survival Kit"],
+        "starting_equipment": ["Rebreather Mask", "Artifact Detector", "Traveler’s Coat"]
     },
     {
-      "name": "Noble",
-      "description": "Born into wealth and influence, you carry the weight (and benefits) of a high social standing, with all the responsibilities that come with it.",
-      "feature": {
-        "name": "Position of Privilege",
-        "description": "Your noble birth opens doors; you’re afforded respect, and high society is more likely to assist you."
-      }
-    },
-    {
-      "name": "Outlander",
-      "description": "A survivor of the wild, you’re at home in the wilderness and have learned to live off the land far from civilization’s comforts.",
-      "feature": {
-        "name": "Wanderer",
-        "description": "You have an excellent memory for natural terrain and can always find food and fresh water for yourself and your companions."
-      }
-    },
-    {
-      "name": "Sage",
-      "description": "A dedicated scholar, your insatiable curiosity drives you to uncover ancient secrets and forgotten lore.",
-      "feature": {
-        "name": "Researcher",
-        "description": "When you’re trying to recall or find obscure lore, you often know where to turn—even if you don’t immediately know the answer."
-      }
-    },
-    {
-      "name": "Sailor",
-      "description": "A seasoned mariner, you’ve braved the unpredictable seas and learned the ways of life aboard a ship.",
-      "feature": {
-        "name": "Ship’s Passage",
-        "description": "When you need to travel by sea, you can often secure free passage on a vessel, provided you can offer something in return."
-      }
-    },
-    {
-      "name": "Soldier",
-      "description": "A disciplined veteran of military service, you’re no stranger to the rigors of combat and the structure of an army.",
-      "feature": {
-        "name": "Military Rank",
-        "description": "Your rank in the military garners respect; fellow soldiers and even superiors may be inclined to assist you."
-      }
-    },
-    {
-      "name": "Urchin",
-      "description": "A streetwise survivor, your early life on the hard city streets taught you to be resourceful and quick on your feet.",
-      "feature": {
-        "name": "City Secrets",
-        "description": "Having grown up on the streets, you know the secret passages and shortcuts of urban environments like the back of your hand."
-      }
+        "name": "Runic Forger",
+        "description": "You craft enchanted items by fusing ancient runes with modern technology.",
+        "feature": {
+            "name": "Runesmith",
+            "description": "You can inscribe temporary magical effects on metal objects."
+        },
+        "skill_proficiencies": ["Ritual Crafting", "Runic Studies"],
+        "tool_proficiencies": ["Engraving Tools"],
+        "starting_equipment": ["Runed Hammer", "Spell-Stone", "Inscription Journal"]
     }
-  ]
-}
+]
