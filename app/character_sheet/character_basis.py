@@ -1,63 +1,5 @@
-from dataclasses import dataclass
-from typing import Union
-from random import randint
 import json
 from pathlib import Path
-
-@dataclass
-class HitPoints:
-    max_hp: int = 0
-    current_hp: int
-    temp_hp: int = 0
-    
-    def roll_hit_points(self, hit_die: str, ability_modifier: int, level: int = 1):
-        hit_die_size = int(hit_die[1:])  # Extracts the number from 'd8', 'd10', etc.
-        if level > 1:
-            hit_die_size = randint(1, hit_die_size)
-        self.max_hp += hit_die_size + ability_modifier
-        self.current_hp = self.max_hp
-
-class AbilityScores:
-    might: int
-    reflexes: int
-    endurance_core: int
-    arcane_logic: int
-    aether_sense: int
-    presence: int
-    
-    def __init__(self, starting_scores: dict[str, int]):
-        self.might = starting_scores.get('might', 0)
-        self.reflexes = starting_scores.get('reflexes', 0)
-        self.endurance_core = starting_scores.get('endurance_core', 0)
-        self.arcane_logic = starting_scores.get('arcane_logic', 0)
-        self.aether_sense = starting_scores.get('aether_sense', 0)
-        self.presence = starting_scores.get('presence', 0)
-        
-    def increase_ability_score(self, ability: str, amount: int):
-        if hasattr(self, ability):
-            setattr(self, ability, getattr(self, ability) + amount)
-        else:
-            raise ValueError(f"Invalid ability score: {ability}")
-
-
-class Proficencies:
-    def __init__(self, armor: list[str], weapons: list[str], tools: list[str]):
-        self.armor = armor
-        self.weapons = weapons
-        self.tools = tools
-        
-
-class Equipment:
-    def __init__(self, armor: list[dict[str, Union[int, int]]], weapons: list[dict[str, Union[int, int]]],
-                 tools: list[dict[str, Union[str, int]]], potions: list[dict[str, Union[str, int]]],
-                 currency: list[dict[str, int]], misc: list[str]):
-        self.armor = armor
-        self.weapons = weapons
-        self.tools = tools
-        self.potions = potions
-        self.currency = currency
-        self.misc = misc
-
 
 class CharacterClass:
     def __init__(self, name: str, hit_die: str, primary_abilities: list[str], saving_throws: list[str],
@@ -72,17 +14,17 @@ class CharacterClass:
         self.starting_equipment = starting_equipment
         self.starting_ability_scores = starting_ability_scores
         
-    @classmethod
-    def load_class(cls, class_name: str):
-        # Load class data from a file or database
-        classes_path = Path('data/classes.json')
-        with open(classes_path, 'r') as f:
-            classes = json.load(f)
-        class_data = next([c for c in classes if c['name'] == class_name], None)
-        if class_data:
-            return cls(**class_data)
-        else:
-            raise ValueError(f"Class '{class_name}' not found")
+        @classmethod
+        def load_class(cls, class_name: str):
+            # Load class data from a file or database
+            classes_path = Path('data/classes.json')
+            with open(classes_path, 'r') as f:
+                classes = json.load(f)
+            class_data = next([c for c in classes if c['name'] == class_name], None)
+            if class_data:
+                return cls(**class_data)
+            else:
+                raise ValueError(f"Class '{class_name}' not found")
 
 
 class Race:
@@ -108,6 +50,7 @@ class Race:
             return cls(**race)
         else:
             raise ValueError(f"Race '{race_name}' not found")
+        
         
 class Background:
     def __init__(self, name: str, desc: str, feature: dict[str, str],
