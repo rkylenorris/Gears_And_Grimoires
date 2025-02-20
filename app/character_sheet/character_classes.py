@@ -1,11 +1,21 @@
 from dataclasses import dataclass
 from typing import Union
+from random import randint
+import json
+from pathlib import Path
 
 @dataclass
 class HitPoints:
-    max_hp: int
+    max_hp: int = 0
     current_hp: int
     temp_hp: int = 0
+    
+    def roll_hit_points(self, hit_die: str, ability_modifier: int, level: int = 1):
+        hit_die_size = int(hit_die[1:])  # Extracts the number from 'd8', 'd10', etc.
+        if level > 1:
+            hit_die_size = randint(1, hit_die_size)
+        self.max_hp += hit_die_size + ability_modifier
+        self.current_hp = self.max_hp
 
 class AbilityScores:
     might: int
@@ -50,9 +60,9 @@ class Equipment:
 
 
 class CharacterClass:
-    def __init__(self, name: str, hit_die: str, primary_abilities: list[str], saving_throws,
-                 proficiencies : Proficencies, skills, starting_equipment: Equipment,
-                 starting_ability_scores: dict[str, int]):
+    def __init__(self, name: str, hit_die: str, primary_abilities: list[str], saving_throws: list[str],
+                 proficiencies : dict[str, list[str]], skills: list[str],
+                 starting_equipment: list[str], starting_ability_scores: dict[str, int]):
         self.name = name
         self.hit_die = hit_die
         self.primary_abilities = primary_abilities
@@ -61,24 +71,63 @@ class CharacterClass:
         self.skills = skills
         self.starting_equipment = starting_equipment
         self.starting_ability_scores = starting_ability_scores
+        
+    @classmethod
+    def load_class(cls, class_name: str):
+        # Load class data from a file or database
+        classes_path = Path('data/classes.json')
+        with open(classes_path, 'r') as f:
+            classes = json.load(f)
+        class_data = next([c for c in classes if c['name'] == class_name], None)
+        if class_data:
+            return cls(**class_data)
+        else:
+            raise ValueError(f"Class '{class_name}' not found")
 
 
 class Race:
-    def __init__(self, name, ability_bonuses, size, speed, languages, traits):
+    def __init__(self, name: str, desc: str,
+                 ability_bonuses: dict[str, int], size: int,
+                 speed: int, traits: list[str], languages: list[str]):
         self.name = name
+        self.description = desc
         self.ability_bonuses = ability_bonuses
         self.size = size
         self.speed = speed
-        self.languages = languages
         self.traits = traits
-        
+        self.languages = languages
+    
+    @classmethod
+    def load_race(cls, race_name: str):
+        # Load race data from a file or database
+        races_path = Path('data/races.json')
+        with open(races_path, 'r') as f:
+            races = json.load(f)
+        race = next([race for race in races if race['name'] == race_name], None)
+        if race:
+            return cls(**race)
+        else:
+            raise ValueError(f"Race '{race_name}' not found")
         
 class Background:
-    def __init__(self, name, desc, skill_proficiencies, tool_proficiencies, languages, equipment, feature, trait):
+    def __init__(self, name: str, desc: str, feature: dict[str, str],
+                 skill_proficiencies: list[str], tool_proficiencies: list[str],
+                 starting_equipment: list[str]):
         self.name = name
         self.description = desc
         self.skill_proficiencies = skill_proficiencies
         self.tool_proficiencies = tool_proficiencies
-        self.languages = languages
-        self.equipment = equipment
+        self.equipment = starting_equipment
         self.feature = feature
+    
+    @classmethod
+    def load_background(cls, background_name: str):
+        # Load background data from a file or database
+        backgrounds_path = Path('data/backgrounds.json')
+        with open(backgrounds_path, 'r') as f:
+            backgrounds = json.load(f)
+        background = next([bg for bg in backgrounds if bg['name'] == background_name], None)
+        if background:
+            return cls(**background)
+        else:
+            raise ValueError(f"Background '{background_name}' not found")
