@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Union
 
 @dataclass
 class HitPoints:
@@ -21,6 +22,12 @@ class AbilityScores:
         self.arcane_logic = starting_scores.get('arcane_logic', 0)
         self.aether_sense = starting_scores.get('aether_sense', 0)
         self.presence = starting_scores.get('presence', 0)
+        
+    def increase_ability_score(self, ability: str, amount: int):
+        if hasattr(self, ability):
+            setattr(self, ability, getattr(self, ability) + amount)
+        else:
+            raise ValueError(f"Invalid ability score: {ability}")
 
 
 class Proficencies:
@@ -31,8 +38,9 @@ class Proficencies:
         
 
 class Equipment:
-    def __init__(self, armor: dict[str, int], weapons: dict[str, int], tools: dict[str, str],
-                 potions: dict[str, int], currency: dict[str, int], misc):
+    def __init__(self, armor: list[dict[str, Union[int, int]]], weapons: list[dict[str, Union[int, int]]],
+                 tools: list[dict[str, Union[str, int]]], potions: list[dict[str, Union[str, int]]],
+                 currency: list[dict[str, int]], misc: list[str]):
         self.armor = armor
         self.weapons = weapons
         self.tools = tools
