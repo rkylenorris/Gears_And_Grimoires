@@ -22,9 +22,6 @@ class AbilityScores:
         self.aether_sense = starting_scores.get('aether_sense', 0)
         self.presence = starting_scores.get('presence', 0)
 
-    
-
-
 
 class Proficencies:
     def __init__(self, armor: list[str], weapons: list[str], tools: list[str]):
@@ -42,7 +39,6 @@ class Equipment:
         self.potions = potions
         self.currency = currency
         self.misc = misc
-
 
 
 class CharacterClass:
