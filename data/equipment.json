@@ -1,0 +1,154 @@
+{
+    "melee_weapons": [
+        {
+            "name": "Clockwork Saber",
+            "type": "One-Handed",
+            "damage": "1d8",
+            "damage_type": "Slashing",
+            "special": "Self-adjusting edge increases precision, gains +1 attack bonus."
+        },
+        {
+            "name": "Steam-Hammer",
+            "type": "Two-Handed",
+            "damage": "2d6",
+            "damage_type": "Bludgeoning",
+            "special": "Heavy weapon, requires Might 12+. On critical hit, knocks the target prone."
+        },
+        {
+            "name": "Runeblade",
+            "type": "One-Handed",
+            "damage": "1d10",
+            "damage_type": "Slashing (Magical)",
+            "special": "Deals extra +1d4 arcane damage to non-magical foes."
+        },
+        {
+            "name": "Gadget Gauntlet",
+            "type": "Light",
+            "damage": "1d6",
+            "damage_type": "Piercing/Electric",
+            "special": "Retractable blades and short-range shock pulse (1d4 electric damage, 10-ft range)."
+        },
+        {
+            "name": "Arc-Whip",
+            "type": "Finesse",
+            "damage": "1d6",
+            "damage_type": "Electric",
+            "special": "10-ft reach, can disable small machines or stun organic targets (save DC 12)."
+        }
+    ],
+    "ranged_weapons": [
+        {
+            "name": "Repeating Crossbow",
+            "type": "Two-Handed",
+            "damage": "1d8",
+            "damage_type": "Piercing",
+            "special": "Rapid fire allows up to 3 shots per round with disadvantage on 2nd & 3rd shots."
+        },
+        {
+            "name": "Hand-Cranked Arcane Rifle",
+            "type": "Two-Handed",
+            "damage": "2d10",
+            "damage_type": "Force",
+            "special": "Charge-up takes 1 turn; fires an explosive arcane burst in a 15-ft line."
+        },
+        {
+            "name": "Grappling Hook Launcher",
+            "type": "Utility",
+            "damage": "None",
+            "damage_type": "None",
+            "special": "Can pull the user or a target (DC 13 Strength save) within 30 ft."
+        },
+        {
+            "name": "Tesla Pistol",
+            "type": "One-Handed",
+            "damage": "1d8",
+            "damage_type": "Electric",
+            "special": "Ignores armor; deals double damage to mechanical enemies."
+        }
+    ],
+    "armor": [
+        {
+            "name": "Tinkerer's Vest",
+            "type": "Light Armor",
+            "armor_class": 12,
+            "special": "Provides +2 to Precision Engineering rolls."
+        },
+        {
+            "name": "Gear-Forged Brigandine",
+            "type": "Medium Armor",
+            "armor_class": 15,
+            "special": "Balanced protection without speed penalties."
+        },
+        {
+            "name": "Steamplate",
+            "type": "Heavy Armor",
+            "armor_class": 18,
+            "special": "Grants +2 Might but reduces Reflexes by -2."
+        },
+        {
+            "name": "Clockwork Aegis",
+            "type": "Shield",
+            "armor_class": 2,
+            "special": "Can deploy an energy barrier once per long rest, absorbing up to 10 damage."
+        }
+    ],
+    "gadgets_tools": [
+        {
+            "name": "Autowinder Gauntlet",
+            "effect": "Wrist-mounted device with extendable tools for quick fixes or escape tricks.",
+            "uses": "Can disable mechanical locks or bypass simple traps (DC 14 check)."
+        },
+        {
+            "name": "Pocket Dynamo",
+            "effect": "A small hand-cranked generator that overcharges weapons or devices.",
+            "uses": "Grants +1d4 extra damage to electric weapons for 10 minutes."
+        },
+        {
+            "name": "Runic Projector",
+            "effect": "Emits temporary glyphs for protection or utility.",
+            "uses": "Can create a 10-ft protective barrier for 1 turn (absorbs up to 10 damage)."
+        },
+        {
+            "name": "Alchemical Canister",
+            "effect": "A pressurized flask containing healing mist, flammable gas, or paralyzing fumes.",
+            "uses": "Choose one: heal 1d6 HP, create fire hazard (1d6 fire), or stun enemies (DC 12)."
+        },
+        {
+            "name": "Steam-Jet Boots",
+            "effect": "Short bursts of propulsion allow limited dashing or jumping.",
+            "uses": "Grants a 20-ft burst jump or a free disengage once per short rest."
+        },
+        {
+            "name": "Magneto-Wrench",
+            "effect": "A multi-tool that manipulates metal objects at short distances.",
+            "uses": "Can pull metallic objects up to 10 lbs within 30 ft."
+        }
+    ],
+    "consumables": [
+        {
+            "name": "Mana-Fused Oil",
+            "effect": "Enhances gear performance for a limited time.",
+            "uses": "Grants +1 to attack rolls with mechanical weapons for 1 hour."
+        },
+        {
+            "name": "Restoration Ampoule",
+            "effect": "A steampunk-style potion delivered via auto-injection.",
+            "uses": "Restores 2d8 HP instantly."
+        },
+        {
+            "name": "Flash Powder Capsule",
+            "effect": "Creates a temporary smoke screen for stealth or distraction.",
+            "uses": "Obscures vision in a 10-ft radius for 1 turn."
+        },
+        {
+            "name": "Tesla Charge Cell",
+            "effect": "Provides emergency energy for powered devices.",
+            "uses": "Restores power to 1 depleted gadget or weapon."
+        },
+        {
+            "name": "Alchemy Infused Rations",
+            "effect": "Field rations that provide minor healing over time.",
+            "uses": "Restores 1 HP per minute for 10 minutes."
+        }
+    ]
+}
