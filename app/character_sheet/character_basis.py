@@ -14,17 +14,17 @@ class CharacterClass:
         self.starting_equipment = starting_equipment
         self.starting_ability_scores = starting_ability_scores
         
-        @classmethod
-        def load_class(cls, class_name: str):
-            # Load class data from a file or database
-            classes_path = Path('data/classes.json')
-            with open(classes_path, 'r') as f:
-                classes = json.load(f)
-            class_data = next([c for c in classes if c['name'] == class_name], None)
-            if class_data:
-                return cls(**class_data)
-            else:
-                raise ValueError(f"Class '{class_name}' not found")
+    @classmethod
+    def load_class(cls, class_name: str):
+        # Load class data from a file or database
+        classes_path = Path('data/classes.json')
+        with open(classes_path, 'r') as f:
+            classes = json.load(f)
+        class_data = next([c for c in classes if c['name'] == class_name], None)
+        if class_data:
+            return cls(**class_data)
+        else:
+            raise ValueError(f"Class '{class_name}' not found")
 
 
 class Race:
