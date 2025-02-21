@@ -1,0 +1,154 @@
+{
+    "monsters": [
+        {
+            "name": "Clockwork Guardian",
+            "type": "Construct",
+            "description": "A towering automaton built to defend lost ruins, infused with arcane energy.",
+            "hit_points": 75,
+            "armor_class": 16,
+            "speed": 20,
+            "abilities": [
+                {
+                    "name": "Overdrive Mode",
+                    "effect": {"bonus_damage": "1d6", "duration": "2 rounds"}
+                },
+                {
+                    "name": "Shockwave Slam",
+                    "effect": {"damage": "2d8", "type": "force", "range": "10 ft"}
+                }
+            ],
+            "resistances": ["Poison", "Fire"],
+            "weaknesses": ["Lightning"],
+            "loot": [
+                {"item": "Scrap Metal", "chance": 70},
+                {"item": "Power Core", "chance": 20},
+                {"item": "Ancient Gear", "chance": 10}
+            ]
+        },
+        {
+            "name": "Aether Wraith",
+            "type": "Undead",
+            "description": "A spectral entity that feeds on the life force of the living, drifting between realms.",
+            "hit_points": 50,
+            "armor_class": 14,
+            "speed": 40,
+            "abilities": [
+                {
+                    "name": "Aether Pulse",
+                    "effect": {"damage": "1d10", "type": "arcane", "range": "15 ft"}
+                },
+                {
+                    "name": "Life Drain",
+                    "effect": {"damage": "1d6", "type": "necrotic", "heals_user": "half_damage"}
+                }
+            ],
+            "resistances": ["Psychic", "Cold"],
+            "weaknesses": ["Fire", "Radiant"],
+            "loot": [
+                {"item": "Wraith Essence", "chance": 50},
+                {"item": "Fading Soulstone", "chance": 30},
+                {"item": "Etheric Cloth", "chance": 20}
+            ]
+        },
+        {
+            "name": "Steam Drake",
+            "type": "Beast",
+            "description": "A reptilian predator adapted to the industrial age, exhaling scalding steam.",
+            "hit_points": 85,
+            "armor_class": 15,
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Steam Breath",
+                    "effect": {"damage": "2d6", "type": "fire", "cone": "15 ft"}
+                },
+                {
+                    "name": "Tail Whip",
+                    "effect": {"damage": "1d8", "type": "bludgeoning", "knockback": "5 ft"}
+                }
+            ],
+            "resistances": ["Fire"],
+            "weaknesses": ["Cold"],
+            "loot": [
+                {"item": "Drake Scales", "chance": 60},
+                {"item": "Molten Core", "chance": 25},
+                {"item": "Rare Ember Gem", "chance": 15}
+            ]
+        },
+        {
+            "name": "Rustcrawler",
+            "type": "Aberration",
+            "description": "A nightmare born of corroded metal and twisted alchemy, consuming anything metallic in its path.",
+            "hit_points": 65,
+            "armor_class": 13,
+            "speed": 25,
+            "abilities": [
+                {
+                    "name": "Corrosive Touch",
+                    "effect": {"damage": "1d6", "type": "acid", "destroys_equipment": "chance"}
+                },
+                {
+                    "name": "Metal Hunger",
+                    "effect": {"disarms_target": "chance", "eats_metal": "small weapons"}
+                }
+            ],
+            "resistances": ["Poison"],
+            "weaknesses": ["Thunder"],
+            "loot": [
+                {"item": "Rust Fragment", "chance": 80},
+                {"item": "Corrosive Slime", "chance": 30},
+                {"item": "Dissolved Alloy", "chance": 10}
+            ]
+        },
+        {
+            "name": "Arcane Warforged",
+            "type": "Construct",
+            "description": "An ancient relic of war, combining brute strength with devastating magic.",
+            "hit_points": 95,
+            "armor_class": 18,
+            "speed": 20,
+            "abilities": [
+                {
+                    "name": "Arcane Beam",
+                    "effect": {"damage": "2d8", "type": "force", "line": "30 ft"}
+                },
+                {
+                    "name": "Barrier Shield",
+                    "effect": {"absorbs_damage": "10", "duration": "2 turns"}
+                }
+            ],
+            "resistances": ["Force", "Electric"],
+            "weaknesses": ["Water"],
+            "loot": [
+                {"item": "Runed Core", "chance": 40},
+                {"item": "Ancient Warplate", "chance": 20},
+                {"item": "Power Crystal", "chance": 10}
+            ]
+        },
+        {
+            "name": "Chimeric Abomination",
+            "type": "Aberration",
+            "description": "A monstrous fusion of various creatures, held together by unnatural energies.",
+            "hit_points": 120,
+            "armor_class": 17,
+            "speed": 30,
+            "abilities": [
+                {
+                    "name": "Mutation Surge",
+                    "effect": {"random_ability": "changes each turn"}
+                },
+                {
+                    "name": "Tentacle Lash",
+                    "effect": {"damage": "1d8", "type": "slashing", "grapple_chance": "50%"}
+                }
+            ],
+            "resistances": ["Poison", "Necrotic"],
+            "weaknesses": ["Radiant", "Fire"],
+            "loot": [
+                {"item": "Mutated Organ", "chance": 50},
+                {"item": "Unstable Essence", "chance": 30},
+                {"item": "Strange Artifact", "chance": 20}
+            ]
+        }
+    ]
+}
