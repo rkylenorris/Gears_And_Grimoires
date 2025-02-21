@@ -64,4 +64,12 @@ class CharacterSheet:
     
     def __repr__(self):
         return f"{self.name} - {self.player_class.name} - {self.race.name} - {self.background.name}"
+
+
+def character_creator(char_name: str, class_name: str, race_name: str, background_name: str, appearance: str):
+    player_class = CharacterClass.load_class(class_name)
+    race = Race.load_race(race_name)
+    background = Background.load_background(background_name)
+    return CharacterSheet(char_name, player_class, race, background, appearance)
+
     
