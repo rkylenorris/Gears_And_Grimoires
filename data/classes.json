@@ -16,7 +16,7 @@
     {
         "name": "Arcane Engineer",
         "hit_die": "d8",
-        "primary_abilities": ["Arcane Logic", "Precision Engineering"],
+        "primary_abilities": ["Arcane Logic", "Reflexes"],
         "saving_throws": ["Arcane Logic", "Reflexes"],
         "proficiencies": {
             "armor": ["Light Armor"],

@@ -149,6 +149,16 @@
                 "Expert": "Can negotiate minor favors from magical beings.",
                 "Mastery": "Can forge temporary pacts with magical creatures for short-term benefits."
             }
+        },
+        {
+            "name": "Aether Mechanics",
+            "ability": "Arcane Logic",
+            "description": "The ability to merge magic with technology, create enchanted weapons, and modify spell-powered devices.",
+            "proficiency_levels": {
+                "Novice": "+1 to checks involving magical tech integration.",
+                "Expert": "Can enchant weapons or armor with minor magical properties.",
+                "Mastery": "Can create complex magical devices or enchantments."
+            }
         }
     ]
 }
