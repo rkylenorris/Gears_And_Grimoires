@@ -20,7 +20,7 @@ class CharacterClass:
         classes_path = Path('data/classes.json')
         with open(classes_path, 'r') as f:
             classes = json.load(f)
-        class_data = next([c for c in classes if c['name'] == class_name], None)
+        class_data = next(iter([c for c in classes if c['name'] == class_name]), None)
         if class_data:
             return cls(**class_data)
         else:
@@ -28,12 +28,12 @@ class CharacterClass:
 
 
 class Race:
-    def __init__(self, name: str, desc: str,
-                 ability_bonuses: dict[str, int], size: int,
+    def __init__(self, name: str, description: str,
+                 ability_score_increase: dict[str, int], size: int,
                  speed: int, traits: list[str], languages: list[str]):
         self.name = name
-        self.description = desc
-        self.ability_bonuses = ability_bonuses
+        self.description = description
+        self.ability_bonuses = ability_score_increase
         self.size = size
         self.speed = speed
         self.traits = traits
@@ -45,7 +45,7 @@ class Race:
         races_path = Path('data/races.json')
         with open(races_path, 'r') as f:
             races = json.load(f)
-        race = next([race for race in races if race['name'] == race_name], None)
+        race = next(iter([race for race in races if race['name'] == race_name]), None)
         if race:
             return cls(**race)
         else:
@@ -53,11 +53,11 @@ class Race:
         
         
 class Background:
-    def __init__(self, name: str, desc: str, feature: dict[str, str],
+    def __init__(self, name: str, description: str, feature: dict[str, str],
                  skill_proficiencies: list[str], tool_proficiencies: list[str],
                  starting_equipment: list[str]):
         self.name = name
-        self.description = desc
+        self.description = description
         self.skill_proficiencies = skill_proficiencies
         self.tool_proficiencies = tool_proficiencies
         self.equipment = starting_equipment
@@ -69,7 +69,7 @@ class Background:
         backgrounds_path = Path('data/backgrounds.json')
         with open(backgrounds_path, 'r') as f:
             backgrounds = json.load(f)
-        background = next([bg for bg in backgrounds if bg['name'] == background_name], None)
+        background = next(iter([bg for bg in backgrounds if bg['name'] == background_name]), None)
         if background:
             return cls(**background)
         else:

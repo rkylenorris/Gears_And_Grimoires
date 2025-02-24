@@ -41,9 +41,11 @@ class CharacterSheet:
     def add_class_race_ability_increases(self):
         
         for ability in self.player_class.primary_abilities:
+            ability = ability.lower().replace(' ', '_')
             self.abilities.increase_ability_score(ability, 1)
         
         for ability, increase in self.race.ability_bonuses.items():
+            ability = ability.lower().replace(' ', '_')
             self.abilities.increase_ability_score(ability, increase)
     
     def get_equipment_proficencies(self):

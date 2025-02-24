@@ -8,7 +8,7 @@ import json
 @dataclass
 class HitPoints:
     max_hp: int = 0
-    current_hp: int
+    current_hp: int = 0
     temp_hp: int = 0
     
     def roll_hit_points(self, hit_die: str, ability_modifier: int, level: int = 1):
@@ -74,15 +74,23 @@ class Skills:
         skills_path = Path('data/skills.json')
         with open(skills_path, 'r') as f:
             skills_info = json.load(f)
-        return skills_info
+        return skills_info['skills']
     
     def calculate_skill_scores(self):
         skill_scores = {}
         for skill in self.skills:
-            ability = self.skills_info[skill]['ability']
+            ability = self.get_ability_for_skills(skill)
+            ability = ability.lower().replace(' ', '_')
             modifier = getattr(self.modifiers, ability)
             skill_scores[skill] = modifier + self.proficency_modifier
         return skill_scores
+    
+    def get_ability_for_skills(self, skill: str) -> str:
+        skill_info = next((s for s in self.skills_info if s['name'] == skill), None)
+        if skill_info:
+            return skill_info['ability']
+        else:
+            raise ValueError(f"Skill '{skill}' not found")
 
 
 class Pack:
